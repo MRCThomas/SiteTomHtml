@@ -1,0 +1,66 @@
+body
+{
+    background-image: url(image/backpic1.jpg);
+    background-size: 100%;
+    overflow-y: scroll;
+}
+
+#corp
+{
+    width: 100%;
+    max-width: 1500px;
+    min-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.background {
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    width:100%;
+    height:100%;
+    background-size: 100%;
+  }
+  
+  .texte_centrer {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 90px;
+    color:darkgoldenrod;
+    text-decoration: underline;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  .vertical-menu {
+    width: 200px; /* allonger la taille du menu vertical de gauche à droite */
+  }
+  
+  .vertical-menu a {
+    background-color: rgba(247, 0, 0, 0.753); /* couleur du fond menu vertical */
+    color: black; /* Couleur du texte */
+    display: block; 
+    padding: 24px; /* change la taille des cases du menu vertical */
+    text-decoration: none; /* Enlève la ligne en dessous le lien */
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: rgba(252, 193, 0, 0.438); /* couleur au passage de la souris */
+  }
+  
+  .vertical-menu a.active {
+    background-color: #4d0000; /* couleur de fond menu vertical */
+    color: white;
+  }
+
+  .conteneur
+  {
+    margin: 0px 20px;
+    height: 1500px;
+    color: rgb(255, 255, 255);
+  }
