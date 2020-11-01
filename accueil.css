@@ -76,7 +76,7 @@ nav a{
 
 nav a:hover{
     color: rgb(255, 0, 0);
-    border-bottom: 2px solid rgb(255, 0, 0);
+    border-bottom: 5px solid rgb(255, 0, 0);
 }
 
   .conteneur
