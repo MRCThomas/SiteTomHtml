@@ -1,0 +1,136 @@
+body
+{
+    background-image: url(image/backpic1.jpg);
+    background-size: 10%;
+    overflow-y: scroll;
+    background-repeat: space repeat;
+}
+
+#corp
+{
+    width: 100%;
+  
+}
+
+
+.background {
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    width:100%;
+    height:100%;
+    background-size: 100%;
+  }
+  
+  .texte_centrer {
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 90px;
+    color:rgb(233, 170, 10);
+    -webkit-text-stroke: 3px black;
+    text-decoration: underline;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  .texte_centrer2 {
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 90px;
+    color:darkgoldenrod;
+    -webkit-text-stroke: 3px black;
+    text-decoration: underline;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet);
+  }
+
+  *{
+    margin: 0px;
+    padding: 0px;
+    font-size: 25px ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav{
+    width: 99.5%;
+    margin: 5px auto 50px auto;
+    background-color: rgb(92, 92, 92);
+    position: sticky;
+    top: 0px;
+    border-style: solid;
+    border-color: white;
+  }
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    float: left ;
+    width: 16%;/*100% divisé par le nombre d'éléments de menu*/
+    text-align: center;/*Centre le texte dans les éléments de menu*/
+}
+
+
+nav ul::after{/*Evite que le menu n'ait une hauteur nulle*/
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block; /*Toute la surface sera cliquable*/
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+    padding: 15px 0px;/*Agrandit le menu et espace la bordure du texte*/
+}
+
+nav a:hover{
+    color: rgb(255, 0, 0);
+    border-bottom: 5px solid rgb(255, 0, 0);
+}
+
+.bloc {
+    border: 10px ridge rgb(255, 208, 0);
+    background-color: rgba(151, 151, 151, 0.795);
+    position: absolute;
+    margin: auto;
+    top: 45%;
+    right: 0;
+    left: 0;
+    width: 80%;
+    height: 95%;
+}
+
+img
+{
+    background-image: url(image/flash-article2.jpg);
+    width: 250px;
+    height: 200px;
+    border: solid 3px;
+    text-shadow: white 0px 0px 2px;
+    font-size: 10px;
+    background-size: 50px;
+    float: right;
+    
+}
+.titre p {
+    font: small-caps bold 1.2rem sans-serif;
+    text-align: center;
+    -webkit-text-stroke: 1px rgb(255, 217, 0);
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.titre2 p {
+    text-align: left;
+    color: black;
+    font-size: 25px;
+    margin: 15px;
+}

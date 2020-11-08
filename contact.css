@@ -1,0 +1,105 @@
+body
+{
+    background-image: url(image/eclairperso.jpg);
+    background-size: 10%;
+    overflow-y: scroll;
+    background-repeat: space repeat;
+    background-color: aquamarine;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 25px ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav{
+    width: 99.5%;
+    margin: 5px auto 50px auto;
+    background-color: rgb(92, 92, 92);
+    position: hidden;
+    top: 0px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+  }
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    float: left ;
+    width: 16%;/*100% divisé par le nombre d'éléments de menu*/
+    text-align: center;/*Centre le texte dans les éléments de menu*/
+}
+
+
+nav ul::after{/*Evite que le menu n'ait une hauteur nulle*/
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block; /*Toute la surface sera cliquable*/
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+    padding: 15px 0px;/*Agrandit le menu et espace la bordure du texte*/
+}
+
+nav a:hover{
+    color: rgb(255, 0, 0);
+    border-bottom: 5px solid rgb(255, 0, 0);
+}
+
+/*SECTION FORMULAIRE CONTACT*/
+input[type=text], select, textarea {
+    width: 100%; /* longueur des sections */
+    padding: 12px; /* taille des sections */ 
+    border: 1px solid rgb(0, 0, 0); /* bordure de section remplissage */
+    border-radius: 4px; /* arrondir les bords */
+    box-sizing: border-box; /* Pour que la width et le padding reste en place */
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+  }
+  
+  /* Modification du boutton "Envoyé" */
+  input[type=submit] {
+    background-color: #00ffd5;/*modifie la couleur boutton "envoyer"*/
+    color: white;/*modifie la couleur du texte du boutton*/
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Change la couleur qaund on passe la souris sur le boutton */
+  input[type=submit]:hover {
+    background-color: #00b9b0;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    width: 500px;
+    height: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: auto;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    border: 3px solid grey;
+    padding: 100px;
+  }
+
+  .container p{
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+h3{
+  text-decoration: underline;
+}

@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 25px ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav{
+    width: 99.5%;
+    margin: 5px auto 50px auto;
+    background-color: rgb(92, 92, 92);
+    position: hidden;
+    top: 0px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+  }
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    float: left ;
+    width: 14%;/*100% divisé par le nombre d'éléments de menu*/
+    text-align: center;/*Centre le texte dans les éléments de menu*/
+}
+
+
+nav ul::after{/*Evite que le menu n'ait une hauteur nulle*/
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block; /*Toute la surface sera cliquable*/
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+    padding: 15px 0px;/*Agrandit le menu et espace la bordure du texte*/
+}
+
+nav a:hover{
+    color: rgb(255, 0, 0);
+    border-bottom: 5px solid rgb(255, 0, 0);
+}
+
+
+h1{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    color: black;
+}
+
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+

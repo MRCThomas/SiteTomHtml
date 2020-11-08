@@ -1,8 +1,10 @@
 body
 {
-    background-image: url(image/backpic1.jpg);/*image de fond du site*/
-    background-size: 100%;
-    overflow-y: hidden;/*éviter le défilement de la page*/
+    background-image: url(image/eclairperso.jpg);
+    background-size: 10%;
+    overflow-y: scroll;
+    background-repeat: space repeat;
+    background-color: rgb(59, 59, 59);
 }
 
 #corp
@@ -10,18 +12,9 @@ body
     width: 100%;
   
 }
-  
-  .texte_centrer {
-    position: absolute;
-    top: 11%;/*disposition du titre depuis le haut de page*/
-    left: 38%;/*disposition du titre depuis la gauche de page*/
-    font-size: 90px;/*taille du texte*/
-    color:darkgoldenrod;/*couleur texte*/
-    text-decoration: underline;/*line en dessous du texte*/
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;/*police d'écriture*/
-  }
+
 /*SECTION POUR MODIFIER INTERIEUR BARRE NAV*/
-  *{
+*{
     margin: 0;
     padding: 0;/*taille des cellules*/
     font-size: 25px ;
@@ -68,3 +61,38 @@ nav a:hover{
     border-bottom: 5px solid rgb(255, 0, 0);/*couleur bordure du bas des cellules*/
 }
 
+.titre_photo
+{
+    text-align: center;
+    font-size: 60px;
+    color: gold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline;
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
+}
+
+
+.barry_iris
+{
+    text-align: center;
+    
+}
+
+.joe_cisco
+{
+    text-align: center;
+}
+
+.cait_harri
+{
+    text-align: center;
+}
+
+.eddie_wally
+{
+    text-align: center;
+}
+ 
+img{
+    border: 5px solid rgb(0, 0, 0);
+}
