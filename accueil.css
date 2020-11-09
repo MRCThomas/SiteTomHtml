@@ -1,8 +1,9 @@
 body
 {
-    background-image: url(image/backpic1.jpg);/*image de fond du site*/
-    background-size: 100%;
+    background: url(image/backpic1.jpg)center no-repeat;/*image de fond du site*/
+    background-size: cover;
     overflow-y: hidden;/*éviter le défilement de la page*/
+    min-height: 100vh;
 }
 
 #corp

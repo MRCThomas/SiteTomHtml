@@ -1,8 +1,9 @@
 body
 {
-    background-image: url(image/eclairperso.jpg);
+    background: url(image/eclairperso.jpg)center no-repeat;/*image de fond du site*/
     background-size: 10%;
-    overflow-y: scroll;
+    overflow-y: scroll;/*éviter le défilement de la page*/
+    min-height: 100vh;
     background-repeat: space repeat;
     background-color: rgb(59, 59, 59);
 }
