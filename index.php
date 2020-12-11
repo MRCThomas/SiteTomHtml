@@ -3,10 +3,12 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Merci</title>
+    <title>Page THom, PHP</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='merci.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
     <script src='main.js'></script>
+    <?php session_start();?>
+    
 </head>
 <body>
     
@@ -39,23 +41,56 @@
 
 </form>
 
+<?php/*
+    
+    echo "La session à démarrer <br>";
+    $disconnect=false;
+
+    if(isset($_SESSION ['Connect'])) {
+        echo "la session exite.<br>".$_SESSION ['Connect'];
+        $_SESSION ['Connect']=false;
+    }else{
+        
+        $_SESSION['Connect']=true;
+        session_destroy();
+        unset($_SESSION);
+        echo "La session est terminé, vous etes deconnecté.<br>";
+        
+    }
+    */
+    
+     ?>
 
 <?php
-    if(isset($_GET["chiffre"]))
-    {
-        echo $_GET["chiffre"];
-        echo ('<div><br></div>');
-        echo rand(0, 10);
-        echo ('<div><br></div>');
-        
-         if(isset(rand()=$_GET["chiffre"]));
-         {
-             echo("Perdue")
-         }
 
+    
+     if(isset($_SESSION["nombre"]))
+    {
+        echo " ok ";
+        if(isset($_GET["chiffre"]))
+    
+    if($_GET["chiffre"]<$_SESSION["nombre"])
+    {
+        echo "plus grand";
     }
     
+    else if ($_SESSION["nombre"]>$_GET["chiffre"]){
+        echo "plus petit";
+    }
+    
+    else
+    {
+        echo"GAGNÉ! ";
+        $_SESSION["nombre"]=rand(0,100)
+    
+    
+    else ($_SESSION["nombre"])=rand(0,100);
+    
 ?>
+
+
+
+
 
    
 </body>
