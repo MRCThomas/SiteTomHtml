@@ -11,27 +11,15 @@
     
 </head>
 <body>
-    
-    <nav>
-        <ul>
-            <li><a href="Page d'accueil.html">Accueil</a></li>
-            <li><a href="CV.html">CV [FR]</a></li>
-            <li><a href="CV[EN].html">CV [EN]</a></li>
-            <li><a href="Personnage.html">Personnages</a></li>
-            <li><a href="Article.html">Article</a></li>
-            <li><a href="image.html">Images</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-  </nav>
-
+   <p><h1>JUSTE PRIX</h1></p>
   <!--formulaire du chiffre -->
   <form action="" method="get" class="form-example">
   
   <div class="form-example">
     
-  <label for="chiffre-user">Ente ton chiffre: </label>
+  <label for="chiffre-user">Entre ton chiffre: </label>
     
-  <input type="text" name="chiffre" id="name" required>
+  <input type="text" name="chiffre" id="name" autofocus>
   
   </div>
 
@@ -41,50 +29,46 @@
 
 </form>
 
-<?php/*
-    
-    echo "La session à démarrer <br>";
-    $disconnect=false;
 
-    if(isset($_SESSION ['Connect'])) {
-        echo "la session exite.<br>".$_SESSION ['Connect'];
-        $_SESSION ['Connect']=false;
-    }else{
-        
-        $_SESSION['Connect']=true;
-        session_destroy();
-        unset($_SESSION);
-        echo "La session est terminé, vous etes deconnecté.<br>";
-        
-    }
-    */
-    
-     ?>
 
 <?php
 
-    
-     if(isset($_SESSION["nombre"]))
+
+if(isset($_SESSION["nombre"]))
+
     {
-        echo " ok ";
+        echo 'votre chiffre "MYSTERE LOL" :'.$_SESSION["nombre"];
+        echo "<div> </br>";
+        isset($_SESSION["essai"]);
+        
         if(isset($_GET["chiffre"]))
     
-    if($_GET["chiffre"]<$_SESSION["nombre"])
-    {
-        echo "plus grand";
-    }
+            if($_GET["chiffre"]<$_SESSION["nombre"])
+                {
+                    $_SESSION["essai"];
+                    echo "Plus Grand";
+                }
     
-    else if ($_SESSION["nombre"]>$_GET["chiffre"]){
-        echo "plus petit";
-    }
+                else if ($_SESSION["nombre"]<$_GET["chiffre"])
+                    {
+                        $_SESSION["essai"];
+                        echo "Plus Petit";
+                    }
     
-    else
-    {
-        echo"GAGNÉ! ";
-        $_SESSION["nombre"]=rand(0,100)
+                else
+                    {
+                        echo"GAGNÉ! ";
+                        echo "Nombre d'essaie : ".$_SESSION["essai"];
+                        $_SESSION["nombre"]=rand(0,100);
+                    }
     
-    
-    else ($_SESSION["nombre"])=rand(0,100);
+                
+    }else 
+        {
+            $_SESSION["nombre"]=rand(0,100);
+        }
+        
+        
     
 ?>
 
