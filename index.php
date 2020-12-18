@@ -11,6 +11,11 @@
     
 </head>
 <body>
+    <?php 
+     
+     include("fonction.php");
+    
+    ?>
    <p><h1>JUSTE PRIX</h1></p>
   <!--formulaire du chiffre -->
   <form action="" method="get" class="form-example">
@@ -29,6 +34,13 @@
 
 </form>
 
+
+<style>
+           <?php echo "div" ?>
+            {
+                color: #009aac;
+            }
+</style>
 
 
 <?php
@@ -68,7 +80,15 @@ if(isset($_SESSION["nombre"]))
             $_SESSION["nombre"]=rand(0,100);
         }
         
-        
+        toto();
+        echo "<br> </br>";
+        tata();
+        $tata = "#c7b900";
+        $text;
+        echo "<br> </br>";
+        RGB("#009aac");
+        $toto = "#c7b900";
+        RGB($toto);
     
 ?>
 
